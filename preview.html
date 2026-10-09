@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohammad Rehan - Technical Leadership Profile Preview</title>
+  <title>Mohammad Rehan Shaik - Profile Preview</title>
   <style>
     :root {
       --bg: #06080d;
@@ -117,6 +117,22 @@
       margin-top: 3px;
     }
 
+    .achievements-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 22px;
+    }
+
+    .achievements-box ul {
+      margin-left: 18px;
+      margin-top: 8px;
+      color: #cbd5e1;
+      font-size: 13.5px;
+      line-height: 1.6;
+    }
+
     .social-links {
       display: flex;
       justify-content: center;
@@ -138,15 +154,15 @@
   <div class="container">
     <div class="top-bar">
       <div>
-        <h1 style="font-size: 18px; font-weight: 800; letter-spacing: -0.02em;">MOHAMMAD REHAN // SYSTEMS ARCHITECT &amp; TECH LEAD</h1>
-        <p style="color: var(--subtext); font-size: 12.5px; margin-top: 3px;">Full name unclipped · Zero gimmick text · Complete framework &amp; lib coverage</p>
+        <h1 style="font-size: 18px; font-weight: 800; letter-spacing: -0.02em;">MOHAMMAD REHAN SHAIK // AI SYSTEMS &amp; AGENTIC AI</h1>
+        <p style="color: var(--subtext); font-size: 12.5px; margin-top: 3px;">Full name unclipped · Personal hobbies removed · Verified projects &amp; achievements</p>
       </div>
-      <div class="badge-pill">TECH LEAD // ARCHITECT</div>
+      <div class="badge-pill">AGENTIC AI &amp; SYSTEMS</div>
     </div>
 
     <!-- 01: HERO SVG -->
     <div class="section-spacing">
-      <img src="assets/hero.svg?v=4" alt="Hero SVG" class="full-svg">
+      <img src="assets/hero.svg?v=5" alt="Hero SVG" class="full-svg">
     </div>
 
     <!-- FEATURED SYSTEMS TABLE -->
@@ -154,18 +170,36 @@
       <table>
         <thead>
           <tr>
-            <th style="width: 22%;">System</th>
+            <th style="width: 20%;">System</th>
             <th style="width: 26%;">Classification</th>
-            <th style="width: 36%;">Key Innovations &amp; Engineering Leadership</th>
+            <th style="width: 38%;">Key Innovations &amp; Engineering Architecture</th>
             <th style="width: 16%;">Stack</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><a href="https://github.com/MrEGAMERZ">AEGIS</a></td>
-            <td><em>Privacy-First On-Device AI Agent</em></td>
-            <td>"The screen leaves last": in-browser local ML sanitization &amp; visual redaction before AI models inspect telemetry data. Built for privacy-critical environments.</td>
+            <td><a href="https://github.com/MrEGAMERZ/AEGIS">AEGIS</a></td>
+            <td><em>Privacy Layer for AI Browser Agents</em></td>
+            <td>"The screen leaves last": in-browser local ML identification &amp; redaction of sensitive visual data before multimodal models inspect display workflows.</td>
             <td><code>Chrome MV3</code> <code>Local ML</code> <code>Privacy</code></td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/MrEGAMERZ/OpenEnv">OpenEnv Enterprise</a></td>
+            <td><em>Agentic Reinforcement Learning</em></td>
+            <td>Custom environment testbed studying agent behavior, tool execution, and feedback-driven recovery when schemas &amp; APIs change dynamically.</td>
+            <td><code>Python</code> <code>Llama-3.2</code> <code>GRPO</code> <code>Gym</code></td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/MrEGAMERZ">CMS-AI</a></td>
+            <td><em>Consent Management &amp; DPDP Platform</em></td>
+            <td>Production privacy platform built during GenAI Developer Internship at <strong>Lensara Technology</strong>, featuring consent records, auditability &amp; OTP workflows.</td>
+            <td><code>FastAPI</code> <code>PostgreSQL</code> <code>Docker</code> <code>Redis</code></td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/MrEGAMERZ/VANTA-v1.0">VANTA</a></td>
+            <td><em>AI-Powered Civic Governance</em></td>
+            <td>Public-service grievance platform connecting citizen reports, spatial location context, and intelligent official dispatch workflows.</td>
+            <td><code>React</code> <code>FastAPI</code> <code>TypeScript</code> <code>Web</code></td>
           </tr>
           <tr>
             <td><a href="https://github.com/MrEGAMERZ">FraudLens</a></td>
@@ -179,63 +213,55 @@
             <td>Native high-refresh utility crafted for ultrawide displays with cosine-falloff cursor magnification and zero background battery drain.</td>
             <td><code>Swift 5</code> <code>AppKit</code> <code>macOS</code></td>
           </tr>
-          <tr>
-            <td><a href="https://github.com/MrEGAMERZ">OpenEnv Enterprise</a></td>
-            <td><em>Reinforcement Learning Testbed</em></td>
-            <td>Gym-compatible RL simulation bed. Trained Llama-3.2-3B via GRPO for resilience against dynamic schema drift in complex environments.</td>
-            <td><code>Python</code> <code>Llama-3.2</code> <code>GRPO</code></td>
-          </tr>
-          <tr>
-            <td><a href="https://github.com/MrEGAMERZ">CMS-AI</a></td>
-            <td><em>Consent Management &amp; DPDP Platform</em></td>
-            <td>Production privacy platform with asynchronous ARQ queues, multi-factor OTP verification &amp; statutory audit trails.</td>
-            <td><code>FastAPI</code> <code>PostgreSQL</code> <code>Redis</code></td>
-          </tr>
-          <tr>
-            <td><a href="https://github.com/MrEGAMERZ">TrustLayer</a></td>
-            <td><em>Enterprise Knowledge Copilot</em></td>
-            <td>Enterprise RAG engine featuring strict source citation attribution and real-time hallucination prevention guardrails.</td>
-            <td><code>RAG</code> <code>AI Safety</code> <code>FAISS</code></td>
-          </tr>
         </tbody>
       </table>
     </div>
 
+    <!-- ACHIEVEMENTS BOX -->
+    <div class="achievements-box">
+      <h3 style="font-size: 15px; font-weight: 800; color: #ff7075; font-family: monospace;">🏅 VERIFIED ACHIEVEMENTS &amp; MILESTONES</h3>
+      <ul>
+        <li><strong>Meta × Scaler Hackathon 2026 — Finalist</strong>, with work connected to agentic execution environments and reinforcement-learning concepts.</li>
+        <li><strong>Smart India Hackathon 2026 — Internal Round, 5th Place</strong>, as part of Team AEGIS X at Presidency University.</li>
+        <li><strong>Infosys Springboard — Introduction to Artificial Intelligence</strong>, completed September 2026.</li>
+      </ul>
+    </div>
+
     <!-- 02: TECHNICAL STACK & LIBRARIES -->
     <div class="section-spacing">
-      <img src="assets/arsenal.svg?v=4" alt="Technical Arsenal SVG" class="full-svg">
+      <img src="assets/arsenal.svg?v=5" alt="Technical Arsenal SVG" class="full-svg">
     </div>
 
     <!-- 03: LEADERSHIP PHILOSOPHY -->
     <div class="section-spacing">
-      <img src="assets/about-me.svg?v=4" alt="Technical Leadership SVG" class="full-svg">
+      <img src="assets/about-me.svg?v=5" alt="Technical Leadership SVG" class="full-svg">
     </div>
 
     <!-- 04: CONNECT SVG -->
     <div class="section-spacing">
-      <img src="assets/connect.svg?v=4" alt="Connect SVG" class="full-svg">
+      <img src="assets/connect.svg?v=5" alt="Connect SVG" class="full-svg">
     </div>
 
     <!-- CLICKABLE SOCIAL BUTTONS -->
     <div class="social-links">
       <a href="https://www.linkedin.com/in/mohammadrehan-dev/" target="_blank">
-        <img src="https://img.shields.io/badge/LinkedIn-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+        <img src="https://img.shields.io/badge/LinkedIn-Mohammad%20Rehan-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn">
       </a>
-      <a href="https://x.com/MR_E_GAMERZ" target="_blank">
-        <img src="https://img.shields.io/badge/X%20(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" alt="X">
+      <a href="https://github.com/MrEGAMERZ" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-MrEGAMERZ-181717?style=for-the-badge&logo=github" alt="GitHub">
       </a>
       <a href="http://rehandev.live/" target="_blank">
-        <img src="https://img.shields.io/badge/Portfolio-e62429?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio">
+        <img src="https://img.shields.io/badge/Portfolio-rehandev.live-e62429?style=for-the-badge&logo=googlechrome" alt="Portfolio">
       </a>
       <a href="mailto:mohammadrehan432432@gmail.com" target="_blank">
-        <img src="https://img.shields.io/badge/Email-0b0e17?style=for-the-badge&logo=gmail&logoColor=e62429" alt="Email">
+        <img src="https://img.shields.io/badge/Email-Contact%20me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
       </a>
     </div>
 
     <!-- METRICS -->
     <div class="gh-metrics">
-      <img src="https://komarev.com/ghpvc/?username=MrEGAMERZ&label=PROFILE+VIEWS&color=e62429&style=for-the-badge&labelColor=0b0e17" alt="Profile Views">
-      <img src="https://img.shields.io/github/followers/MrEGAMERZ?label=FOLLOWERS&style=for-the-badge&color=00d2ff&labelColor=0b0e17&logo=github&logoColor=ffffff" alt="Followers">
+      <img src="https://komarev.com/ghpvc/?username=MrEGAMERZ&label=PROFILE+VIEWS&color=e62429&style=for-the-badge&labelColor=0b0d14" alt="Profile Views">
+      <img src="https://img.shields.io/github/followers/MrEGAMERZ?label=FOLLOWERS&style=for-the-badge&color=00d2ff&labelColor=0b0d14&logo=github&logoColor=ffffff" alt="Followers">
     </div>
   </div>
 

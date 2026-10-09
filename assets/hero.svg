@@ -19,31 +19,29 @@
     .metric-num { font-weight: 800; font-family: 'SF Mono', 'Fira Code', monospace; }
   </style>
 
-  <!-- Panel Base: crisp executive finish with red top accent hairline -->
+  <!-- Panel Base -->
   <rect x="2" y="2" width="876" height="256" rx="10" fill="url(#hero-mat-bg)"/>
   <rect x="2" y="2" width="876" height="256" rx="10" fill="url(#eng-grid)"/>
   <rect x="2" y="2" width="876" height="256" rx="10" stroke="#1c2233" stroke-width="1.2"/>
 
-  <!-- Precision top accent line -->
+  <!-- Top accent line -->
   <line x1="36" y1="2" x2="180" y2="2" stroke="#e62429" stroke-width="3"/>
   <line x1="180" y1="2" x2="260" y2="2" stroke="#00d2ff" stroke-width="3"/>
 
   <!-- Top Status Row -->
   <g transform="translate(36, 32)">
     <circle cx="4" cy="0" r="3.5" fill="#10b981"/>
-    <text x="14" y="4" fill="#cbd5e1" class="font-mono" font-size="11" font-weight="600" letter-spacing="1">SYSTEMS ARCHITECT &amp; TECH LEAD</text>
-    <text x="260" y="4" fill="#334155" class="font-mono" font-size="11">|</text>
-    <text x="278" y="4" fill="#94a3b8" class="font-mono" font-size="11">BANGALORE, INDIA</text>
-    <text x="410" y="4" fill="#334155" class="font-mono" font-size="11">|</text>
-    <text x="428" y="4" fill="#64748b" class="font-mono" font-size="11">AI/ML · FULL-STACK · NATIVE DESKTOP</text>
+    <text x="14" y="4" fill="#cbd5e1" class="font-mono" font-size="11" font-weight="600" letter-spacing="1">AI SYSTEMS &amp; AGENTIC AI ENGINEER</text>
+    <text x="280" y="4" fill="#334155" class="font-mono" font-size="11">|</text>
+    <text x="296" y="4" fill="#94a3b8" class="font-mono" font-size="11">PRESIDENCY UNIVERSITY, BENGALURU</text>
+    <text x="548" y="4" fill="#334155" class="font-mono" font-size="11">|</text>
+    <text x="564" y="4" fill="#64748b" class="font-mono" font-size="11">CS (AI/ML SPECIALIZATION)</text>
   </g>
 
-  <!-- Sharp, Minimalist Angular Spider Crest (Architectural Mark) -->
+  <!-- Sharp, Minimalist Angular Spider Crest -->
   <g transform="translate(775, 36)">
-    <!-- Body Core -->
     <polygon points="35,6 42,18 28,18" fill="#e62429"/>
     <polygon points="35,20 43,32 35,48 27,32" fill="#e62429"/>
-    <!-- Precision legs -->
     <path d="M 28 24 L 14 16 L 6 26" fill="none" stroke="#e62429" stroke-width="2" stroke-linecap="round"/>
     <path d="M 42 24 L 56 16 L 64 26" fill="none" stroke="#e62429" stroke-width="2" stroke-linecap="round"/>
     <path d="M 27 32 L 10 32 L 4 42" fill="none" stroke="#e62429" stroke-width="2" stroke-linecap="round"/>
@@ -52,64 +50,64 @@
     <path d="M 42 40 L 56 50 L 62 66" fill="none" stroke="#e62429" stroke-width="2" stroke-linecap="round"/>
   </g>
 
-  <!-- Clean, 100% Unclipped Name Display -->
+  <!-- Complete Full Name -->
   <g transform="translate(36, 102)">
-    <text x="0" y="0" fill="#ffffff" class="font-sans title" font-size="50">
-      MOHAMMAD <tspan fill="#e62429">REHAN</tspan>
+    <text x="0" y="0" fill="#ffffff" class="font-sans title" font-size="46">
+      MOHAMMAD REHAN <tspan fill="#e62429">SHAIK</tspan>
     </text>
   </g>
 
-  <!-- Dynamic Roles: Engineering Leadership & Technical Breadth -->
+  <!-- Dynamic Roles -->
   <g transform="translate(36, 142)">
     <text x="0" y="0" fill="#e62429" class="font-mono" font-size="15" font-weight="900">❯</text>
     
-    <text x="18" y="0" fill="#f8fafc" class="font-mono" font-size="15" font-weight="700">
-      AI/ML Lead · Fine-Tuning &amp; Reinforcement Learning (GRPO)
+    <text x="18" y="0" fill="#f8fafc" class="font-mono" font-size="14.5" font-weight="700">
+      Agentic AI &amp; Tool Use (State, Memory &amp; Execution Reliability)
       <animate attributeName="opacity" values="1;1;0;0;0;0;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;0.33;0.96;0.98;0.99;1"/>
     </text>
     
-    <text x="18" y="0" fill="#00d2ff" class="font-mono" font-size="15" font-weight="700">
-      Full-Stack &amp; Distributed Systems Architect (FastAPI · Next.js · Redis)
+    <text x="18" y="0" fill="#00d2ff" class="font-mono" font-size="14.5" font-weight="700">
+      Full-Stack &amp; Scalable Backends (FastAPI · PostgreSQL · Docker · React)
       <animate attributeName="opacity" values="0;0;1;1;0;0;0" dur="10s" repeatCount="indefinite" keyTimes="0;0.32;0.34;0.64;0.66;0.98;1"/>
     </text>
 
-    <text x="18" y="0" fill="#e62429" class="font-mono" font-size="15" font-weight="700">
-      Zero-Overhead Native Desktop Utilities (AppKit · Swift · C++)
+    <text x="18" y="0" fill="#e62429" class="font-mono" font-size="14.5" font-weight="700">
+      Reinforcement Learning (GRPO) &amp; Privacy-Aware AI Architectures
       <animate attributeName="opacity" values="0;0;0;0;1;1;0" dur="10s" repeatCount="indefinite" keyTimes="0;0.65;0.67;0.95;0.97;0.99;1"/>
     </text>
   </g>
 
-  <!-- Mission Statement (Leadership & End-to-End Ownership) -->
+  <!-- Focused Bio Line -->
   <g transform="translate(36, 178)">
     <text x="0" y="0" fill="#94a3b8" class="font-sans" font-size="13.5">
-      End-to-end technical leadership: architecting resilient AI models, scalable backends, and low-latency native interfaces.
+      Building AI-powered applications, autonomous agent workflows, and practical software systems with robust evaluation.
     </text>
   </g>
 
-  <!-- Executive Metric Badges (Leadership Proof) -->
+  <!-- Metric Badges -->
   <g transform="translate(36, 218)">
     <line x1="0" y1="-14" x2="808" y2="-14" stroke="#1a2030" stroke-width="1"/>
     
-    <!-- Metric 1: Architecture -->
+    <!-- Achievement 1 -->
     <g transform="translate(0, 0)">
-      <text x="0" y="0" fill="#e62429" class="metric-num" font-size="12">PRODUCTION AI</text>
-      <text x="110" y="0" fill="#cbd5e1" class="font-sans" font-size="12">Local ML · RAG · GRPO</text>
+      <text x="0" y="0" fill="#e62429" class="metric-num" font-size="12">FINALIST</text>
+      <text x="75" y="0" fill="#cbd5e1" class="font-sans" font-size="12">Meta × Scaler Hackathon 2026</text>
     </g>
 
-    <text x="270" y="0" fill="#334155" class="font-mono" font-size="12">|</text>
+    <text x="280" y="0" fill="#334155" class="font-mono" font-size="12">|</text>
 
-    <!-- Metric 2: Systems -->
-    <g transform="translate(290, 0)">
-      <text x="0" y="0" fill="#00d2ff" class="metric-num" font-size="12">FULL-CYCLE</text>
-      <text x="86" y="0" fill="#cbd5e1" class="font-sans" font-size="12">Idea ➔ Architecture ➔ Ship</text>
+    <!-- Achievement 2 -->
+    <g transform="translate(298, 0)">
+      <text x="0" y="0" fill="#00d2ff" class="metric-num" font-size="12">EXPERIENCE</text>
+      <text x="96" y="0" fill="#cbd5e1" class="font-sans" font-size="12">GenAI Intern @ Lensara Tech</text>
     </g>
 
-    <text x="510" y="0" fill="#334155" class="font-mono" font-size="12">|</text>
+    <text x="536" y="0" fill="#334155" class="font-mono" font-size="12">|</text>
 
-    <!-- Metric 3: Domain Leadership -->
-    <g transform="translate(530, 0)">
-      <text x="0" y="0" fill="#10b981" class="metric-num" font-size="12">LEADERSHIP</text>
-      <text x="92" y="0" fill="#cbd5e1" class="font-sans" font-size="12">Hackathons · Teams · Mentorship</text>
+    <!-- Achievement 3 -->
+    <g transform="translate(554, 0)">
+      <text x="0" y="0" fill="#10b981" class="metric-num" font-size="12">HONORS</text>
+      <text x="68" y="0" fill="#cbd5e1" class="font-sans" font-size="12">SIH '26 (AEGIS X) · Infosys AI</text>
     </g>
 
     <!-- Alias -->

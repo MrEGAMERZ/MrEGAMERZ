@@ -1,0 +1,286 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="100%" height="430" fill="none">
+  <defs>
+    <!-- Background Gradient for Outer Dashboard -->
+    <linearGradient id="id-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b16"/>
+      <stop offset="50%" stop-color="#091126"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <!-- Outer Dashboard Border -->
+    <linearGradient id="id-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#247bff" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#ff354f" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#247bff" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Dot Pattern -->
+    <pattern id="id-dots" x="0" y="0" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.9" fill="#247bff" fill-opacity="0.12"/>
+    </pattern>
+
+    <!-- Metallic Clasp Gradient -->
+    <linearGradient id="metal-clasp" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="30%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#f1f5f9"/>
+      <stop offset="70%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+
+    <!-- Lanyard Strap Gradient -->
+    <linearGradient id="strap-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#247bff"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Badge Card Background Gradient -->
+    <linearGradient id="badge-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101a36"/>
+      <stop offset="45%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#180e22"/>
+    </linearGradient>
+
+    <!-- Holographic Foil Sweep Gradient -->
+    <linearGradient id="foil-sweep" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#247bff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="65%" stop-color="#ff354f" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Clip for Badge Card Interior -->
+    <clipPath id="badge-inner-clip">
+      <rect x="0" y="0" width="270" height="340" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .font-sans {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    .font-mono {
+      font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', Menlo, monospace;
+    }
+    .title {
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+  </style>
+
+  <!-- Base Dashboard Canvas -->
+  <rect x="10" y="10" width="860" height="410" rx="16" fill="url(#id-bg)"/>
+  <rect x="10" y="10" width="860" height="410" rx="16" fill="url(#id-dots)"/>
+  <rect x="10" y="10" width="860" height="410" rx="16" stroke="url(#id-border)" stroke-width="1.5"/>
+
+  <!-- Top Title -->
+  <g transform="translate(40, 32)">
+    <rect x="0" y="0" width="105" height="20" rx="4" fill="#0d1b38" stroke="#247bff" stroke-width="1"/>
+    <text x="8" y="14" fill="#247bff" class="font-mono" font-size="10.5" font-weight="700">VERIFIED ID</text>
+    <text x="117" y="15" fill="#f8fafc" class="font-sans title" font-size="18">Identity Credential &amp; Verified Telemetry</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LEFT: HANGING LANYARD ID WITH METAL CLASP & PENDULUM SWING   -->
+  <!-- ============================================================ -->
+  <g transform="translate(180, 20)">
+    <!-- Drop into place (0s - 1.2s damped), then gentle +/- 1.7 deg continuous swing -->
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="180,-20; 180,32; 180,16; 180,24; 180,20" 
+      keyTimes="0; 0.45; 0.7; 0.88; 1" 
+      dur="1.2s" 
+      fill="freeze" 
+      calcMode="spline" 
+      keySplines="0.25 1 0.5 1; 0.25 1 0.5 1; 0.25 1 0.5 1; 0.25 1 0.5 1"
+    />
+
+    <!-- Continuous Damped-style Pendulum Swing from Top Clasp Anchor (0, 0) -->
+    <g>
+      <animateTransform 
+        attributeName="transform" 
+        type="rotate" 
+        values="0; 1.7; 0; -1.7; 0" 
+        dur="5.5s" 
+        begin="1.2s" 
+        repeatCount="indefinite" 
+        calcMode="spline" 
+        keySplines="0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1"
+      />
+
+      <!-- Lanyard Ribbon Straps -->
+      <path d="M-22,-20 L-10,32 L10,32 L22,-20 Z" fill="url(#strap-grad)" opacity="0.95"/>
+      <line x1="-1" y1="-20" x2="-1" y2="32" stroke="#247bff" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+      <!-- Metal Clasp Mechanism -->
+      <g transform="translate(0, 32)">
+        <!-- Swivel ring -->
+        <ellipse cx="0" cy="4" rx="10" ry="5" fill="none" stroke="url(#metal-clasp)" stroke-width="2.5"/>
+        <!-- Main metallic hook / buckle -->
+        <rect x="-14" y="8" width="28" height="15" rx="3" fill="url(#metal-clasp)"/>
+        <rect x="-8" y="11" width="16" height="4" rx="1" fill="#1e293b"/>
+        <!-- Clip jaw connected to badge -->
+        <polygon points="-9,23 9,23 6,34 -6,34" fill="url(#metal-clasp)"/>
+        <!-- Badge slot oval cutout -->
+        <ellipse cx="0" cy="46" rx="12" ry="4" fill="#070b16" stroke="#475569" stroke-width="1.2"/>
+      </g>
+
+      <!-- The Physical ID Card (-135, 38 center offset) -->
+      <g transform="translate(-135, 38)">
+        <!-- Drop Shadow of badge -->
+        <rect x="0" y="0" width="270" height="340" rx="14" fill="#000000" opacity="0.5" filter="drop-shadow(0 15px 25px rgba(0,0,0,0.8))"/>
+
+        <!-- Badge Body -->
+        <rect x="0" y="0" width="270" height="340" rx="14" fill="url(#badge-card-bg)" stroke="#2d3f66" stroke-width="1.5"/>
+
+        <!-- Foil Light Sweep Animation Across Card Interior -->
+        <g clip-path="url(#badge-inner-clip)">
+          <!-- Top Accent Ribbon -->
+          <rect x="0" y="0" width="270" height="6" fill="#247bff"/>
+          <rect x="180" y="0" width="90" height="6" fill="#ff354f"/>
+
+          <!-- Moving Holographic Glare -->
+          <rect x="-270" y="0" width="270" height="340" fill="url(#foil-sweep)">
+            <animate attributeName="x" values="-270; 270; 270" dur="4.8s" begin="1.5s" repeatCount="indefinite" keyTimes="0; 0.45; 1"/>
+          </rect>
+
+          <!-- Top Brand / Org -->
+          <g transform="translate(20, 24)">
+            <text x="0" y="0" fill="#64748b" class="font-mono" font-size="9" letter-spacing="1.5">NATIONAL INNOVATION CELL</text>
+            <text x="0" y="14" fill="#247bff" class="font-mono" font-size="11" font-weight="700">SIH '26 CREDENTIAL</text>
+          </g>
+
+          <!-- Status Indicator Dot -->
+          <circle cx="245" cy="28" r="4" fill="#10b981"/>
+
+          <!-- High-Tech Holographic Hex / Chip Crest (Since portrait is omitted) -->
+          <g transform="translate(20, 52)">
+            <!-- Outer Shield Frame -->
+            <rect x="0" y="0" width="230" height="98" rx="8" fill="#070e20" stroke="#1f2d4e" stroke-width="1"/>
+            
+            <!-- Graphic Micro-circuit lines -->
+            <path d="M15,20 L40,20 L55,45 L110,45" fill="none" stroke="#247bff" stroke-width="1" stroke-dasharray="2,2"/>
+            <path d="M215,80 L180,80 L165,55 L120,55" fill="none" stroke="#ff354f" stroke-width="1" stroke-dasharray="2,2"/>
+            
+            <!-- Central Agent Hologram Icon -->
+            <polygon points="115,22 135,33 135,57 115,68 95,57 95,33" fill="#0e1f44" stroke="#247bff" stroke-width="1.5"/>
+            <polygon points="115,28 128,36 128,52 115,60 102,52 102,36" fill="none" stroke="#38bdf8" stroke-width="1"/>
+            <circle cx="115" cy="45" r="4" fill="#60a5fa"/>
+
+            <text x="115" y="86" text-anchor="middle" fill="#93c5fd" class="font-mono" font-size="9" font-weight="700" letter-spacing="1">AUTHENTICATED OPERATOR</text>
+          </g>
+
+          <!-- Identity Info -->
+          <g transform="translate(20, 172)">
+            <text x="0" y="0" fill="#94a3b8" class="font-mono" font-size="9.5">OPERATOR NAME</text>
+            <text x="0" y="19" fill="#f8fafc" class="font-sans" font-size="17" font-weight="800">Mohammad Rehan</text>
+            
+            <text x="0" y="38" fill="#94a3b8" class="font-mono" font-size="9.5">PRIMARY DESIGNATION</text>
+            <text x="0" y="54" fill="#38bdf8" class="font-mono" font-size="12.5" font-weight="700">AI/ML Engineer · SIH Semi-Finalist</text>
+
+            <text x="0" y="73" fill="#94a3b8" class="font-mono" font-size="9.5">ISSUED CODES</text>
+            <text x="0" y="88" fill="#cbd5e1" class="font-mono" font-size="11">NODE: BLR-ISRO // PROJ: AEGIS</text>
+          </g>
+
+          <!-- Barcode & Serial Number at Bottom -->
+          <g transform="translate(20, 280)">
+            <!-- Precision SVG Barcode bars -->
+            <rect x="0" y="0" width="2" height="24" fill="#e2e8f0"/>
+            <rect x="4" y="0" width="4" height="24" fill="#e2e8f0"/>
+            <rect x="10" y="0" width="1" height="24" fill="#e2e8f0"/>
+            <rect x="13" y="0" width="3" height="24" fill="#e2e8f0"/>
+            <rect x="18" y="0" width="5" height="24" fill="#e2e8f0"/>
+            <rect x="25" y="0" width="2" height="24" fill="#e2e8f0"/>
+            <rect x="29" y="0" width="1" height="24" fill="#e2e8f0"/>
+            <rect x="32" y="0" width="4" height="24" fill="#e2e8f0"/>
+            <rect x="38" y="0" width="2" height="24" fill="#e2e8f0"/>
+            <rect x="42" y="0" width="6" height="24" fill="#e2e8f0"/>
+            <rect x="50" y="0" width="2" height="24" fill="#e2e8f0"/>
+            <rect x="54" y="0" width="1" height="24" fill="#e2e8f0"/>
+            <rect x="57" y="0" width="3" height="24" fill="#e2e8f0"/>
+            <rect x="62" y="0" width="5" height="24" fill="#e2e8f0"/>
+            <rect x="69" y="0" width="2" height="24" fill="#e2e8f0"/>
+            <rect x="73" y="0" width="4" height="24" fill="#e2e8f0"/>
+            <rect x="79" y="0" width="1" height="24" fill="#e2e8f0"/>
+            <rect x="82" y="0" width="3" height="24" fill="#e2e8f0"/>
+            <rect x="87" y="0" width="2" height="24" fill="#e2e8f0"/>
+            <rect x="91" y="0" width="5" height="24" fill="#e2e8f0"/>
+            <rect x="98" y="0" width="2" height="24" fill="#e2e8f0"/>
+            <rect x="102" y="0" width="3" height="24" fill="#e2e8f0"/>
+            <rect x="107" y="0" width="1" height="24" fill="#e2e8f0"/>
+            <rect x="110" y="0" width="6" height="24" fill="#e2e8f0"/>
+            <rect x="118" y="0" width="2" height="24" fill="#e2e8f0"/>
+            <rect x="122" y="0" width="4" height="24" fill="#e2e8f0"/>
+            <rect x="128" y="0" width="2" height="24" fill="#e2e8f0"/>
+            <rect x="132" y="0" width="5" height="24" fill="#e2e8f0"/>
+            <rect x="139" y="0" width="1" height="24" fill="#e2e8f0"/>
+            <rect x="142" y="0" width="3" height="24" fill="#e2e8f0"/>
+            <rect x="147" y="0" width="2" height="24" fill="#e2e8f0"/>
+            <rect x="151" y="0" width="4" height="24" fill="#e2e8f0"/>
+            <rect x="157" y="0" width="3" height="24" fill="#e2e8f0"/>
+            <rect x="162" y="0" width="5" height="24" fill="#e2e8f0"/>
+            <rect x="169" y="0" width="2" height="24" fill="#e2e8f0"/>
+            <rect x="173" y="0" width="1" height="24" fill="#e2e8f0"/>
+            <rect x="176" y="0" width="4" height="24" fill="#e2e8f0"/>
+            <rect x="182" y="0" width="2" height="24" fill="#e2e8f0"/>
+            <rect x="186" y="0" width="6" height="24" fill="#e2e8f0"/>
+            <rect x="194" y="0" width="3" height="24" fill="#e2e8f0"/>
+            <rect x="199" y="0" width="1" height="24" fill="#e2e8f0"/>
+            <rect x="202" y="0" width="4" height="24" fill="#e2e8f0"/>
+            <rect x="208" y="0" width="2" height="24" fill="#e2e8f0"/>
+            <rect x="212" y="0" width="5" height="24" fill="#e2e8f0"/>
+            <rect x="219" y="0" width="2" height="24" fill="#e2e8f0"/>
+            <rect x="223" y="0" width="4" height="24" fill="#e2e8f0"/>
+            <rect x="228" y="0" width="2" height="24" fill="#e2e8f0"/>
+
+            <text x="115" y="37" text-anchor="middle" fill="#64748b" class="font-mono" font-size="9" letter-spacing="2">9802-MR-SIH26-SECURE</text>
+          </g>
+
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- RIGHT: VERIFIED REPO & PERFORMANCE TELEMETRY CARDS           -->
+  <!-- ============================================================ -->
+  <g transform="translate(370, 68)">
+    
+    <!-- Telemetry Card 1: SIH '26 Milestone -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="460" height="92" rx="10" fill="#0c152d" stroke="#247bff" stroke-width="1.2"/>
+      <circle cx="36" cy="46" r="18" fill="#132752"/>
+      <text x="27" y="53" fill="#38bdf8" class="font-mono" font-size="20">🏆</text>
+
+      <text x="68" y="32" fill="#247bff" class="font-mono" font-size="11" font-weight="700">VERIFIED COMPETITIVE MILESTONE · 2026</text>
+      <text x="68" y="55" fill="#f8fafc" class="font-sans" font-size="16" font-weight="800">Smart India Hackathon (SIH) Semi-Finalist</text>
+      <text x="68" y="74" fill="#94a3b8" class="font-sans" font-size="12">Selected for AEGIS: Privacy-first on-device AI Agent evaluated with ISRO theme.</text>
+    </g>
+
+    <!-- Telemetry Card 2: Core Engineering Architecture -->
+    <g transform="translate(0, 106)">
+      <rect x="0" y="0" width="460" height="92" rx="10" fill="#180e22" stroke="#ff354f" stroke-width="1.2"/>
+      <circle cx="36" cy="46" r="18" fill="#381527"/>
+      <text x="27" y="53" fill="#ff4d6d" class="font-mono" font-size="20">⚡</text>
+
+      <text x="68" y="32" fill="#ff354f" class="font-mono" font-size="11" font-weight="700">RESEARCH &amp; INFERENCE VERIFICATION</text>
+      <text x="68" y="55" fill="#f8fafc" class="font-sans" font-size="16" font-weight="800">GRPO Reinforcement Learning &amp; Llama-3.2</text>
+      <text x="68" y="74" fill="#94a3b8" class="font-sans" font-size="12">Active OpenEnv simulation testbed with schema drift resilience under test.</text>
+    </g>
+
+    <!-- Telemetry Card 3: System Availability & Native Tooling -->
+    <g transform="translate(0, 212)">
+      <rect x="0" y="0" width="460" height="92" rx="10" fill="#0b1e1b" stroke="#10b981" stroke-width="1.2"/>
+      <circle cx="36" cy="46" r="18" fill="#13382f"/>
+      <text x="27" y="53" fill="#34d399" class="font-mono" font-size="20">🛡️</text>
+
+      <text x="68" y="32" fill="#10b981" class="font-mono" font-size="11" font-weight="700">SYSTEM RELIABILITY &amp; OPEN SOURCE</text>
+      <text x="68" y="55" fill="#f8fafc" class="font-sans" font-size="16" font-weight="800">Zero-Permission Native Desktop Utilities</text>
+      <text x="68" y="74" fill="#94a3b8" class="font-sans" font-size="12">SIDEDOCK AppKit dock &amp; FraudLens multi-stage GenAI phishing detector.</text>
+    </g>
+
+  </g>
+</svg>

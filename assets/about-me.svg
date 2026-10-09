@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="100%" height="340" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bio-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b16"/>
+      <stop offset="50%" stop-color="#091126"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <!-- Border Glow -->
+    <linearGradient id="bio-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#247bff" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#ff354f" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#247bff" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="bio-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1733"/>
+      <stop offset="100%" stop-color="#080e22"/>
+    </linearGradient>
+
+    <!-- Dot Grid Pattern -->
+    <pattern id="bio-dots" x="0" y="0" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.9" fill="#247bff" fill-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .font-sans {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    .font-mono {
+      font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', Menlo, monospace;
+    }
+    .title {
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="10" y="10" width="860" height="320" rx="16" fill="url(#bio-bg)"/>
+  <rect x="10" y="10" width="860" height="320" rx="16" fill="url(#bio-dots)"/>
+  <rect x="10" y="10" width="860" height="320" rx="16" stroke="url(#bio-border)" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <g transform="translate(40, 32)">
+    <rect x="0" y="0" width="95" height="20" rx="4" fill="#0d1b38" stroke="#247bff" stroke-width="1"/>
+    <text x="8" y="14" fill="#247bff" class="font-mono" font-size="10.5" font-weight="700">BIOGRAPHY</text>
+    <text x="108" y="15" fill="#f8fafc" class="font-sans title" font-size="18">The Human Behind The Code</text>
+    <line x1="0" y1="28" x2="800" y2="28" stroke="#17223b" stroke-width="1"/>
+  </g>
+
+  <!-- 3 PILLARS: Education & Roots | Hardware & Consulting | Passions & Philosophy -->
+  <g transform="translate(40, 80)">
+    
+    <!-- PILLAR 1: Academic Roots & Global Foundation -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="254" height="215" rx="12" fill="url(#bio-card)" stroke="#1d2d52" stroke-width="1.2"/>
+      <circle cx="28" cy="28" r="14" fill="#132752"/>
+      <text x="21" y="34" fill="#38bdf8" class="font-mono" font-size="15">🎓</text>
+
+      <text x="50" y="26" fill="#247bff" class="font-mono" font-size="11" font-weight="700">ACADEMICS &amp; ROOTS</text>
+      <text x="50" y="42" fill="#f8fafc" class="font-sans" font-size="15" font-weight="800">Global Perspective</text>
+
+      <line x1="16" y1="56" x2="238" y2="56" stroke="#1a2542" stroke-width="1"/>
+
+      <text x="16" y="78" fill="#e2e8f0" class="font-sans" font-size="12.5" font-weight="600">Presidency University</text>
+      <text x="16" y="94" fill="#94a3b8" class="font-sans" font-size="11.5">Bangalore, India · Computer Science</text>
+
+      <text x="16" y="122" fill="#e2e8f0" class="font-sans" font-size="12.5" font-weight="600">International K-12</text>
+      <text x="16" y="138" fill="#94a3b8" class="font-sans" font-size="11.5">Raised &amp; educated in Kuwait</text>
+
+      <text x="16" y="166" fill="#cbd5e1" class="font-sans" font-size="11.5">Bridging cross-cultural problem</text>
+      <text x="16" y="182" fill="#cbd5e1" class="font-sans" font-size="11.5">solving with deep technical focus.</text>
+
+      <!-- Mini Chip -->
+      <g transform="translate(16, 192)">
+        <rect x="0" y="-8" width="130" height="18" rx="4" fill="#0b1736" stroke="#247bff" stroke-width="0.8"/>
+        <text x="8" y="5" fill="#93c5fd" class="font-mono" font-size="9.5">Kuwait ➔ Bangalore</text>
+      </g>
+    </g>
+
+    <!-- PILLAR 2: Hardware Craft & Entrepreneurial Edge -->
+    <g transform="translate(273, 0)">
+      <rect x="0" y="0" width="254" height="215" rx="12" fill="url(#bio-card)" stroke="#1d2d52" stroke-width="1.2"/>
+      <circle cx="28" cy="28" r="14" fill="#2d131f"/>
+      <text x="21" y="34" fill="#ff4d6d" class="font-mono" font-size="15">💼</text>
+
+      <text x="50" y="26" fill="#ff354f" class="font-mono" font-size="11" font-weight="700">HARDWARE &amp; SERVICES</text>
+      <text x="50" y="42" fill="#f8fafc" class="font-sans" font-size="15" font-weight="800">Builder at the Metal</text>
+
+      <line x1="16" y1="56" x2="238" y2="56" stroke="#1a2542" stroke-width="1"/>
+
+      <text x="16" y="78" fill="#e2e8f0" class="font-sans" font-size="12.5" font-weight="600">Custom Rig Engineering</text>
+      <text x="16" y="94" fill="#94a3b8" class="font-sans" font-size="11.5">High-end PC assembly &amp; tuning</text>
+
+      <text x="16" y="122" fill="#e2e8f0" class="font-sans" font-size="12.5" font-weight="600">Workspace Architect</text>
+      <text x="16" y="138" fill="#94a3b8" class="font-sans" font-size="11.5">Studio &amp; office workstation setups</text>
+
+      <text x="16" y="166" fill="#cbd5e1" class="font-sans" font-size="11.5">Deep respect for silicon limits,</text>
+      <text x="16" y="182" fill="#cbd5e1" class="font-sans" font-size="11.5">thermals, and low-level latency.</text>
+
+      <!-- Mini Chip -->
+      <g transform="translate(16, 192)">
+        <rect x="0" y="-8" width="145" height="18" rx="4" fill="#201018" stroke="#ff354f" stroke-width="0.8"/>
+        <text x="8" y="5" fill="#fda4af" class="font-mono" font-size="9.5">Hardware Rig Consultant</text>
+      </g>
+    </g>
+
+    <!-- PILLAR 3: Flow State, Machines & Philosophy -->
+    <g transform="translate(546, 0)">
+      <rect x="0" y="0" width="254" height="215" rx="12" fill="url(#bio-card)" stroke="#1d2d52" stroke-width="1.2"/>
+      <circle cx="28" cy="28" r="14" fill="#1b1435"/>
+      <text x="21" y="34" fill="#a78bfa" class="font-mono" font-size="15">⚡</text>
+
+      <text x="50" y="26" fill="#8b5cf6" class="font-mono" font-size="11" font-weight="700">FLOW &amp; MOTORSPORTS</text>
+      <text x="50" y="42" fill="#f8fafc" class="font-sans" font-size="15" font-weight="800">Adrenaline &amp; Craft</text>
+
+      <line x1="16" y1="56" x2="238" y2="56" stroke="#1a2542" stroke-width="1"/>
+
+      <text x="16" y="78" fill="#e2e8f0" class="font-sans" font-size="12.5" font-weight="600">Royal Enfield Rides</text>
+      <text x="16" y="94" fill="#94a3b8" class="font-sans" font-size="11.5">Cruising open highways to reset</text>
+
+      <text x="16" y="122" fill="#e2e8f0" class="font-sans" font-size="12.5" font-weight="600">Competitive FPS Gaming</text>
+      <text x="16" y="138" fill="#94a3b8" class="font-sans" font-size="11.5">High-reflex strategic gameplay</text>
+
+      <text x="16" y="166" fill="#cbd5e1" class="font-sans" font-size="11.5">Engineering with intuitive speed,</text>
+      <text x="16" y="182" fill="#cbd5e1" class="font-sans" font-size="11.5">ruthless simplicity, and zero fluff.</text>
+
+      <!-- Mini Chip -->
+      <g transform="translate(16, 192)">
+        <rect x="0" y="-8" width="138" height="18" rx="4" fill="#18102a" stroke="#8b5cf6" stroke-width="0.8"/>
+        <text x="8" y="5" fill="#ddd6fe" class="font-mono" font-size="9.5">Royal Enfield Enthusiast</text>
+      </g>
+    </g>
+
+  </g>
+</svg>

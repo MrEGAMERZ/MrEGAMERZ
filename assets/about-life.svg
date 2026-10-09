@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 320" width="100%" height="320" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="about-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b16"/>
+      <stop offset="60%" stop-color="#0a1126"/>
+      <stop offset="100%" stop-color="#060913"/>
+    </linearGradient>
+
+    <!-- Border Glow -->
+    <linearGradient id="about-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#247bff" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#ff354f" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#247bff" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Dot Grid -->
+    <pattern id="about-dots" x="0" y="0" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.9" fill="#247bff" fill-opacity="0.12"/>
+    </pattern>
+
+    <!-- Card Gradients -->
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#11182e"/>
+      <stop offset="100%" stop-color="#0a1020"/>
+    </linearGradient>
+
+    <linearGradient id="slider-card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131c38"/>
+      <stop offset="50%" stop-color="#0e152b"/>
+      <stop offset="100%" stop-color="#181329"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    .font-mono {
+      font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', Menlo, monospace;
+    }
+    .title {
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+  </style>
+
+  <!-- Panel Base -->
+  <rect x="10" y="10" width="860" height="300" rx="16" fill="url(#about-bg)"/>
+  <rect x="10" y="10" width="860" height="300" rx="16" fill="url(#about-dots)"/>
+  <rect x="10" y="10" width="860" height="300" rx="16" stroke="url(#about-border)" stroke-width="1.5"/>
+
+  <!-- Left Column: Core Engineering Capabilities -->
+  <g transform="translate(40, 36)">
+    <!-- Section Header -->
+    <rect x="0" y="0" width="80" height="20" rx="4" fill="#0d1b38" stroke="#247bff" stroke-width="1"/>
+    <text x="8" y="14" fill="#247bff" class="font-mono" font-size="10.5" font-weight="700">CAPABILITIES</text>
+    <text x="92" y="15" fill="#f8fafc" class="font-sans title" font-size="18">Core Systems &amp; R&amp;D</text>
+
+    <!-- Capability Card 1 -->
+    <g transform="translate(0, 35)">
+      <rect x="0" y="0" width="370" height="66" rx="8" fill="url(#card-grad)" stroke="#1e2a4a" stroke-width="1"/>
+      <circle cx="24" cy="24" r="10" fill="#0f264d"/>
+      <text x="18" y="29" fill="#247bff" class="font-mono" font-size="14">⚙</text>
+      <text x="44" y="24" fill="#f1f5f9" class="font-sans" font-size="13.5" font-weight="700">On-Device &amp; Privacy-First AI</text>
+      <text x="44" y="44" fill="#94a3b8" class="font-sans" font-size="11.5">Local ML inference, Chrome MV3 agents, screen &amp; data redaction (AEGIS).</text>
+    </g>
+
+    <!-- Capability Card 2 -->
+    <g transform="translate(0, 111)">
+      <rect x="0" y="0" width="370" height="66" rx="8" fill="url(#card-grad)" stroke="#1e2a4a" stroke-width="1"/>
+      <circle cx="24" cy="24" r="10" fill="#30152b"/>
+      <text x="18" y="29" fill="#ff354f" class="font-mono" font-size="14">◈</text>
+      <text x="44" y="24" fill="#f1f5f9" class="font-sans" font-size="13.5" font-weight="700">Reinforcement Learning &amp; LLM Tuning</text>
+      <text x="44" y="44" fill="#94a3b8" class="font-sans" font-size="11.5">GRPO algorithms, Gym-compatible simulation envs, schema drift defense.</text>
+    </g>
+
+    <!-- Capability Card 3 -->
+    <g transform="translate(0, 187)">
+      <rect x="0" y="0" width="370" height="66" rx="8" fill="url(#card-grad)" stroke="#1e2a4a" stroke-width="1"/>
+      <circle cx="24" cy="24" r="10" fill="#11293c"/>
+      <text x="18" y="28" fill="#38bdf8" class="font-mono" font-size="14">⚡</text>
+      <text x="44" y="24" fill="#f1f5f9" class="font-sans" font-size="13.5" font-weight="700">Native Systems &amp; Low-Latency Engineering</text>
+      <text x="44" y="44" fill="#94a3b8" class="font-sans" font-size="11.5">macOS AppKit &amp; Swift desktop tools (SIDEDOCK), async microservices.</text>
+    </g>
+  </g>
+
+  <!-- Vertical Divider -->
+  <line x1="445" y1="35" x2="445" y2="285" stroke="#17223b" stroke-width="1"/>
+  <circle cx="445" cy="160" r="3" fill="#247bff"/>
+
+  <!-- Right Column: 3-Slide Interests Carousel (Changes every 4s, 12s loop) -->
+  <g transform="translate(470, 36)">
+    <!-- Header -->
+    <rect x="0" y="0" width="105" height="20" rx="4" fill="#261021" stroke="#ff354f" stroke-width="1"/>
+    <text x="8" y="14" fill="#ff354f" class="font-mono" font-size="10.5" font-weight="700">NEURAL RADAR</text>
+    <text x="117" y="15" fill="#f8fafc" class="font-sans title" font-size="18">Focus, Passions &amp; Hobbies</text>
+
+    <!-- Segment Progress Bars (3 segments) -->
+    <g transform="translate(0, 30)">
+      <!-- Segment 1 BG -->
+      <rect x="0" y="0" width="118" height="3" rx="1.5" fill="#1b253d"/>
+      <!-- Segment 1 Fill (0s - 4s active) -->
+      <rect x="0" y="0" width="0" height="3" rx="1.5" fill="#247bff">
+        <animate attributeName="width" values="0;118;118;0;0;0" dur="12s" begin="0s" repeatCount="indefinite" keyTimes="0;0.31;0.33;0.34;0.99;1"/>
+      </rect>
+
+      <!-- Segment 2 BG -->
+      <rect x="126" y="0" width="118" height="3" rx="1.5" fill="#1b253d"/>
+      <!-- Segment 2 Fill (4s - 8s active) -->
+      <rect x="126" y="0" width="0" height="3" rx="1.5" fill="#ff354f">
+        <animate attributeName="width" values="0;0;0;118;118;0;0" dur="12s" begin="0s" repeatCount="indefinite" keyTimes="0;0.32;0.33;0.64;0.66;0.67;1"/>
+      </rect>
+
+      <!-- Segment 3 BG -->
+      <rect x="252" y="0" width="118" height="3" rx="1.5" fill="#1b253d"/>
+      <!-- Segment 3 Fill (8s - 12s active) -->
+      <rect x="252" y="0" width="0" height="3" rx="1.5" fill="#a78bfa">
+        <animate attributeName="width" values="0;0;0;0;118;118;0" dur="12s" begin="0s" repeatCount="indefinite" keyTimes="0;0.65;0.66;0.67;0.97;0.99;1"/>
+      </rect>
+    </g>
+
+    <!-- Carousel Container Box -->
+    <g transform="translate(0, 45)">
+      <rect x="0" y="0" width="370" height="208" rx="12" fill="url(#slider-card-grad)" stroke="#222f52" stroke-width="1.2"/>
+
+      <!-- SLIDE 1: Autonomous Agents & RL / SIH '26 (0s - 4s) -->
+      <g>
+        <animate attributeName="opacity" values="1;1;0;0;0;0;0;1" dur="12s" begin="0s" repeatCount="indefinite" keyTimes="0;0.31;0.34;0.65;0.68;0.96;0.98;1"/>
+        <text x="24" y="36" fill="#247bff" class="font-mono" font-size="12" font-weight="700">01 // SPECIALIZATION &amp; HOBBY</text>
+        <text x="24" y="65" fill="#f8fafc" class="font-sans" font-size="20" font-weight="800">Autonomous Agents &amp; RL</text>
+        
+        <text x="24" y="98" fill="#94a3b8" class="font-sans" font-size="13">
+          Tuning policy models with Group Relative Policy
+        </text>
+        <text x="24" y="118" fill="#94a3b8" class="font-sans" font-size="13">
+          Optimization (GRPO). Passionate about turning
+        </text>
+        <text x="24" y="138" fill="#94a3b8" class="font-sans" font-size="13">
+          theoretical papers into production inference engines.
+        </text>
+
+        <!-- Pill Badges -->
+        <g transform="translate(24, 162)">
+          <rect x="0" y="0" width="135" height="24" rx="12" fill="#0c1d3c" stroke="#247bff" stroke-width="1"/>
+          <text x="14" y="16" fill="#93c5fd" class="font-mono" font-size="11">SIH '26 Semi-Finalist</text>
+
+          <rect x="145" y="0" width="85" height="24" rx="12" fill="#1e1b4b" stroke="#6366f1" stroke-width="1"/>
+          <text x="160" y="16" fill="#c7d2fe" class="font-mono" font-size="11">RL / GRPO</text>
+        </g>
+      </g>
+
+      <!-- SLIDE 2: Native App Craft & System Tinkering (4s - 8s) -->
+      <g>
+        <animate attributeName="opacity" values="0;0;1;1;0;0;0;0" dur="12s" begin="0s" repeatCount="indefinite" keyTimes="0;0.32;0.35;0.64;0.67;0.96;0.98;1"/>
+        <text x="24" y="36" fill="#ff354f" class="font-mono" font-size="12" font-weight="700">02 // DESKTOP &amp; HARDWARE TINKERING</text>
+        <text x="24" y="65" fill="#f8fafc" class="font-sans" font-size="20" font-weight="800">System Utilities &amp; UX Craft</text>
+        
+        <text x="24" y="98" fill="#94a3b8" class="font-sans" font-size="13">
+          Obsessed with fluid, friction-free interfaces.
+        </text>
+        <text x="24" y="118" fill="#94a3b8" class="font-sans" font-size="13">
+          Writing zero-overhead Swift/AppKit utilities,
+        </text>
+        <text x="24" y="138" fill="#94a3b8" class="font-sans" font-size="13">
+          custom hotkeys, and minimal desktop experiences.
+        </text>
+
+        <!-- Pill Badges -->
+        <g transform="translate(24, 162)">
+          <rect x="0" y="0" width="115" height="24" rx="12" fill="#2d131f" stroke="#ff354f" stroke-width="1"/>
+          <text x="14" y="16" fill="#fda4af" class="font-mono" font-size="11">macOS Native</text>
+
+          <rect x="125" y="0" width="110" height="24" rx="12" fill="#13233b" stroke="#38bdf8" stroke-width="1"/>
+          <text x="138" y="16" fill="#bae6fd" class="font-mono" font-size="11">AppKit / Swift</text>
+        </g>
+      </g>
+
+      <!-- SLIDE 3: Open Source, Flow-State & Gaming (8s - 12s) -->
+      <g>
+        <animate attributeName="opacity" values="0;0;0;0;1;1;0;0" dur="12s" begin="0s" repeatCount="indefinite" keyTimes="0;0.65;0.67;0.68;0.97;0.99;0.999;1"/>
+        <text x="24" y="36" fill="#a78bfa" class="font-mono" font-size="12" font-weight="700">03 // FLOW-STATE &amp; DOWNTIME</text>
+        <text x="24" y="65" fill="#f8fafc" class="font-sans" font-size="20" font-weight="800">Open Source &amp; Gaming</text>
+        
+        <text x="24" y="98" fill="#94a3b8" class="font-sans" font-size="13">
+          When not pushing commits or evaluating weights:
+        </text>
+        <text x="24" y="118" fill="#94a3b8" class="font-sans" font-size="13">
+          competitive FPS gaming, tinkering with dev tooling,
+        </text>
+        <text x="24" y="138" fill="#94a3b8" class="font-sans" font-size="13">
+          and deep dives into cybersecurity &amp; threat models.
+        </text>
+
+        <!-- Pill Badges -->
+        <g transform="translate(24, 162)">
+          <rect x="0" y="0" width="125" height="24" rx="12" fill="#201538" stroke="#a78bfa" stroke-width="1"/>
+          <text x="14" y="16" fill="#ddd6fe" class="font-mono" font-size="11">Competitive FPS</text>
+
+          <rect x="135" y="0" width="125" height="24" rx="12" fill="#122a28" stroke="#2dd4bf" stroke-width="1"/>
+          <text x="148" y="16" fill="#99f6e4" class="font-mono" font-size="11">Threat Modeling</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

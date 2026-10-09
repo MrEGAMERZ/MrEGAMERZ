@@ -1,266 +1,208 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="100%" height="430" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" width="100%" height="470" fill="none">
   <defs>
-    <!-- Dark Background -->
-    <linearGradient id="sp-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b0d14"/>
-      <stop offset="100%" stop-color="#06070a"/>
+    <linearGradient id="sp-arsenal-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0e17"/>
+      <stop offset="100%" stop-color="#06080d"/>
     </linearGradient>
 
-    <!-- Subtle spider web pattern -->
-    <pattern id="web-pat" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 40 M 0 0 L 40 40" fill="none" stroke="#e62429" stroke-opacity="0.03" stroke-width="0.8"/>
+    <pattern id="arsenal-pat" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 32 M 0 0 L 32 32" fill="none" stroke="#e62429" stroke-opacity="0.02" stroke-width="0.8"/>
     </pattern>
   </defs>
 
   <style>
     .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
     .font-mono { font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', Menlo, monospace; }
-    .badge-spider { font-family: monospace; font-size: 11px; font-weight: 600; }
+    .pill { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 11px; font-weight: 600; }
   </style>
 
   <!-- Container Box -->
-  <rect x="2" y="2" width="876" height="426" rx="12" fill="url(#sp-card-bg)"/>
-  <rect x="2" y="2" width="876" height="426" rx="12" fill="url(#web-pat)"/>
-  <rect x="2" y="2" width="876" height="426" rx="12" stroke="#1c1f2e" stroke-width="1.2"/>
+  <rect x="2" y="2" width="876" height="466" rx="10" fill="url(#sp-arsenal-bg)"/>
+  <rect x="2" y="2" width="876" height="466" rx="10" fill="url(#arsenal-pat)"/>
+  <rect x="2" y="2" width="876" height="466" rx="10" stroke="#1c2233" stroke-width="1.2"/>
 
   <!-- Top Accent Bar -->
-  <line x1="30" y1="2" x2="160" y2="2" stroke="#e62429" stroke-width="2.5"/>
+  <line x1="36" y1="2" x2="180" y2="2" stroke="#e62429" stroke-width="3"/>
 
   <!-- Section Header -->
-  <g transform="translate(32, 28)">
-    <rect x="0" y="0" width="105" height="20" rx="4" fill="#180e14" stroke="#e62429" stroke-width="1"/>
-    <text x="8" y="14" fill="#ff7075" class="font-mono" font-size="10.5" font-weight="700">TECH MATRIX</text>
-    <text x="118" y="15" fill="#ffffff" class="font-sans" font-size="17" font-weight="800">The Suit &amp; Web Arsenal</text>
-    <line x1="0" y1="26" x2="816" y2="26" stroke="#171a26" stroke-width="1"/>
+  <g transform="translate(36, 28)">
+    <rect x="0" y="0" width="125" height="20" rx="4" fill="#180e14" stroke="#e62429" stroke-width="1"/>
+    <text x="8" y="14" fill="#ff7075" class="font-mono" font-size="10.5" font-weight="700">TECHNICAL STACK</text>
+    <text x="138" y="15" fill="#ffffff" class="font-sans" font-size="17" font-weight="800">Production Frameworks, Libraries &amp; Toolchains</text>
+    <line x1="0" y1="26" x2="808" y2="26" stroke="#171c2a" stroke-width="1"/>
   </g>
 
-  <!-- Clean Grid of Tech Modules (3 columns x 2 rows, clean flat developer badges) -->
+  <!-- 6-CARD COMPREHENSIVE SUITE (2 columns x 3 rows with more room and deep coverage) -->
 
-  <!-- MODULE 1: CORE LANGUAGES -->
-  <g transform="translate(32, 70)">
-    <rect x="0" y="0" width="260" height="156" rx="8" fill="#0d101a" stroke="#1c2030" stroke-width="1"/>
-    <rect x="0" y="0" width="3" height="156" rx="1.5" fill="#e62429"/>
-    
-    <text x="14" y="24" fill="#ff7075" class="font-mono" font-size="11" font-weight="700">⌨ LANGUAGES</text>
-    <text x="14" y="40" fill="#64748b" class="font-sans" font-size="11">High-performance codebases</text>
-    
-    <g transform="translate(14, 54)">
-      <!-- Python -->
-      <rect x="0" y="0" width="60" height="22" rx="4" fill="#161b2b"/>
-      <text x="8" y="15" fill="#cbd5e1" class="badge-spider">Python</text>
-      <!-- Swift 5 -->
-      <rect x="66" y="0" width="58" height="22" rx="4" fill="#241117"/>
-      <text x="74" y="15" fill="#fda4af" class="badge-spider">Swift 5</text>
-      <!-- TS -->
-      <rect x="130" y="0" width="80" height="22" rx="4" fill="#161b2b"/>
-      <text x="138" y="15" fill="#cbd5e1" class="badge-spider">TypeScript</text>
+  <!-- 1. AI, REINFORCEMENT LEARNING & LLMs -->
+  <g transform="translate(36, 70)">
+    <rect x="0" y="0" width="394" height="114" rx="8" fill="#0d111c" stroke="#1c2438" stroke-width="1"/>
+    <rect x="0" y="0" width="3" height="114" rx="1.5" fill="#e62429"/>
+
+    <text x="14" y="22" fill="#ff7075" class="font-mono" font-size="11" font-weight="700">🤖 AI, ML &amp; REINFORCEMENT LEARNING</text>
+    <text x="14" y="38" fill="#64748b" class="font-sans" font-size="11">Fine-tuning, policy optimization, embeddings &amp; inference</text>
+
+    <g transform="translate(14, 52)">
+      <rect x="0" y="0" width="66" height="22" rx="4" fill="#241117"/>
+      <text x="8" y="15" fill="#fda4af" class="pill">PyTorch</text>
+      <rect x="72" y="0" width="128" height="22" rx="4" fill="#241117"/>
+      <text x="80" y="15" fill="#fda4af" class="pill">Llama-3.2 (GRPO)</text>
+      <rect x="206" y="0" width="80" height="22" rx="4" fill="#161d2e"/>
+      <text x="214" y="15" fill="#cbd5e1" class="pill">HuggingFace</text>
+      <rect x="292" y="0" width="70" height="22" rx="4" fill="#161d2e"/>
+      <text x="300" y="15" fill="#cbd5e1" class="pill">Gym / RL</text>
     </g>
-    <g transform="translate(14, 82)">
-      <!-- C++ -->
-      <rect x="0" y="0" width="46" height="22" rx="4" fill="#161b2b"/>
-      <text x="8" y="15" fill="#cbd5e1" class="badge-spider">C++</text>
-      <!-- C# -->
-      <rect x="52" y="0" width="42" height="22" rx="4" fill="#161b2b"/>
-      <text x="60" y="15" fill="#cbd5e1" class="badge-spider">C#</text>
-      <!-- JavaScript -->
-      <rect x="100" y="0" width="76" height="22" rx="4" fill="#161b2b"/>
-      <text x="108" y="15" fill="#cbd5e1" class="badge-spider">JavaScript</text>
-    </g>
-    <g transform="translate(14, 110)">
-      <!-- Dart -->
-      <rect x="0" y="0" width="48" height="22" rx="4" fill="#161b2b"/>
-      <text x="8" y="15" fill="#cbd5e1" class="badge-spider">Dart</text>
-      <!-- SQL -->
-      <rect x="54" y="0" width="46" height="22" rx="4" fill="#161b2b"/>
-      <text x="62" y="15" fill="#cbd5e1" class="badge-spider">SQL</text>
-      <!-- Shell -->
-      <rect x="106" y="0" width="70" height="22" rx="4" fill="#161b2b"/>
-      <text x="114" y="15" fill="#cbd5e1" class="badge-spider">Zsh/Bash</text>
+    <g transform="translate(14, 80)">
+      <rect x="0" y="0" width="76" height="22" rx="4" fill="#161d2e"/>
+      <text x="8" y="15" fill="#cbd5e1" class="pill">FAISS (RAG)</text>
+      <rect x="82" y="0" width="86" height="22" rx="4" fill="#161d2e"/>
+      <text x="90" y="15" fill="#cbd5e1" class="pill">LangChain / LI</text>
+      <rect x="174" y="0" width="66" height="22" rx="4" fill="#161d2e"/>
+      <text x="182" y="15" fill="#cbd5e1" class="pill">ONNX RT</text>
+      <rect x="246" y="0" width="68" height="22" rx="4" fill="#161d2e"/>
+      <text x="254" y="15" fill="#cbd5e1" class="pill">TensorFlow</text>
     </g>
   </g>
 
-  <!-- MODULE 2: AI & NEURAL SUIT -->
-  <g transform="translate(308, 70)">
-    <rect x="0" y="0" width="260" height="156" rx="8" fill="#0d101a" stroke="#1c2030" stroke-width="1"/>
-    <rect x="0" y="0" width="3" height="156" rx="1.5" fill="#00d2ff"/>
-    
-    <text x="14" y="24" fill="#38bdf8" class="font-mono" font-size="11" font-weight="700">🕷️ AI &amp; REINFORCEMENT LEARNING</text>
-    <text x="14" y="40" fill="#64748b" class="font-sans" font-size="11">Deep models &amp; policy tuning</text>
-    
-    <g transform="translate(14, 54)">
-      <!-- PyTorch -->
-      <rect x="0" y="0" width="68" height="22" rx="4" fill="#241117"/>
-      <text x="8" y="15" fill="#fda4af" class="badge-spider">PyTorch</text>
-      <!-- Llama GRPO -->
-      <rect x="74" y="0" width="135" height="22" rx="4" fill="#241117"/>
-      <text x="82" y="15" fill="#fda4af" class="badge-spider">Llama-3.2 (GRPO)</text>
+  <!-- 2. COMPUTER VISION & SENSORY AI -->
+  <g transform="translate(450, 70)">
+    <rect x="0" y="0" width="394" height="114" rx="8" fill="#0d111c" stroke="#1c2438" stroke-width="1"/>
+    <rect x="0" y="0" width="3" height="114" rx="1.5" fill="#00d2ff"/>
+
+    <text x="14" y="22" fill="#38bdf8" class="font-mono" font-size="11" font-weight="700">👁️ COMPUTER VISION &amp; AUDIO SYSTEMS</text>
+    <text x="14" y="38" fill="#64748b" class="font-sans" font-size="11">Facial recognition, visual sanitization &amp; sensory streams</text>
+
+    <g transform="translate(14, 52)">
+      <rect x="0" y="0" width="68" height="22" rx="4" fill="#161d2e"/>
+      <text x="8" y="15" fill="#cbd5e1" class="pill">OpenCV 5</text>
+      <rect x="74" y="0" width="134" height="22" rx="4" fill="#241117"/>
+      <text x="82" y="15" fill="#fda4af" class="pill">Facial Rec ML Pipeline</text>
+      <rect x="214" y="0" width="82" height="22" rx="4" fill="#161d2e"/>
+      <text x="222" y="15" fill="#cbd5e1" class="pill">YOLO Vision</text>
     </g>
-    <g transform="translate(14, 82)">
-      <!-- OpenCV -->
-      <rect x="0" y="0" width="68" height="22" rx="4" fill="#161b2b"/>
-      <text x="8" y="15" fill="#cbd5e1" class="badge-spider">OpenCV</text>
-      <!-- Gym / OpenEnv -->
-      <rect x="74" y="0" width="112" height="22" rx="4" fill="#161b2b"/>
-      <text x="82" y="15" fill="#cbd5e1" class="badge-spider">Gym / OpenEnv</text>
-    </g>
-    <g transform="translate(14, 110)">
-      <!-- Gemini API -->
-      <rect x="0" y="0" width="80" height="22" rx="4" fill="#161b2b"/>
-      <text x="8" y="15" fill="#cbd5e1" class="badge-spider">Gemini API</text>
-      <!-- FAISS RAG -->
-      <rect x="86" y="0" width="85" height="22" rx="4" fill="#161b2b"/>
-      <text x="94" y="15" fill="#cbd5e1" class="badge-spider">FAISS (RAG)</text>
+    <g transform="translate(14, 80)">
+      <rect x="0" y="0" width="105" height="22" rx="4" fill="#161d2e"/>
+      <text x="8" y="15" fill="#cbd5e1" class="pill">CoreAudio (macOS)</text>
+      <rect x="111" y="0" width="100" height="22" rx="4" fill="#161d2e"/>
+      <text x="119" y="15" fill="#cbd5e1" class="pill">Whisper Voice</text>
+      <rect x="217" y="0" width="86" height="22" rx="4" fill="#161d2e"/>
+      <text x="225" y="15" fill="#cbd5e1" class="pill">NumPy / SciPy</text>
     </g>
   </g>
 
-  <!-- MODULE 3: NATIVE DESKTOP & TOOLS -->
-  <g transform="translate(584, 70)">
-    <rect x="0" y="0" width="264" height="156" rx="8" fill="#0d101a" stroke="#1c2030" stroke-width="1"/>
-    <rect x="0" y="0" width="3" height="156" rx="1.5" fill="#e62429"/>
-    
-    <text x="14" y="24" fill="#ff7075" class="font-mono" font-size="11" font-weight="700">🪟 MACOS &amp; NATIVE CLIENTS</text>
-    <text x="14" y="40" fill="#64748b" class="font-sans" font-size="11">Zero-permission fast utilities</text>
-    
-    <g transform="translate(14, 54)">
-      <!-- AppKit -->
-      <rect x="0" y="0" width="60" height="22" rx="4" fill="#241117"/>
-      <text x="8" y="15" fill="#fda4af" class="badge-spider">AppKit</text>
-      <!-- SwiftUI -->
-      <rect x="66" y="0" width="64" height="22" rx="4" fill="#161b2b"/>
-      <text x="74" y="15" fill="#cbd5e1" class="badge-spider">SwiftUI</text>
-      <!-- CoreData -->
-      <rect x="136" y="0" width="72" height="22" rx="4" fill="#161b2b"/>
-      <text x="144" y="15" fill="#cbd5e1" class="badge-spider">CoreData</text>
+  <!-- 3. BACKEND, DISTRIBUTED APIS & DATA -->
+  <g transform="translate(36, 196)">
+    <rect x="0" y="0" width="394" height="114" rx="8" fill="#0d111c" stroke="#1c2438" stroke-width="1"/>
+    <rect x="0" y="0" width="3" height="114" rx="1.5" fill="#10b981"/>
+
+    <text x="14" y="22" fill="#34d399" class="font-mono" font-size="11" font-weight="700">⚡ BACKEND ARCHITECTURE &amp; DATA SYSTEMS</text>
+    <text x="14" y="38" fill="#64748b" class="font-sans" font-size="11">Asynchronous microservices, queues &amp; strict schema integrity</text>
+
+    <g transform="translate(14, 52)">
+      <rect x="0" y="0" width="62" height="22" rx="4" fill="#0d241c"/>
+      <text x="8" y="15" fill="#6ee7b7" class="pill">FastAPI</text>
+      <rect x="68" y="0" width="84" height="22" rx="4" fill="#161d2e"/>
+      <text x="76" y="15" fill="#cbd5e1" class="pill">PostgreSQL</text>
+      <rect x="158" y="0" width="50" height="22" rx="4" fill="#241117"/>
+      <text x="166" y="15" fill="#fda4af" class="pill">Redis</text>
+      <rect x="214" y="0" width="90" height="22" rx="4" fill="#161d2e"/>
+      <text x="222" y="15" fill="#cbd5e1" class="pill">SQLAlchemy</text>
     </g>
-    <g transform="translate(14, 82)">
-      <!-- Chrome MV3 -->
-      <rect x="0" y="0" width="130" height="22" rx="4" fill="#241117"/>
-      <text x="8" y="15" fill="#fda4af" class="badge-spider">Chrome MV3 (AEGIS)</text>
-      <!-- UIKit -->
-      <rect x="136" y="0" width="60" height="22" rx="4" fill="#161b2b"/>
-      <text x="144" y="15" fill="#cbd5e1" class="badge-spider">UIKit</text>
-    </g>
-    <g transform="translate(14, 110)">
-      <!-- Flutter -->
-      <rect x="0" y="0" width="62" height="22" rx="4" fill="#161b2b"/>
-      <text x="8" y="15" fill="#cbd5e1" class="badge-spider">Flutter</text>
-      <!-- CoreAudio -->
-      <rect x="68" y="0" width="105" height="22" rx="4" fill="#161b2b"/>
-      <text x="76" y="15" fill="#cbd5e1" class="badge-spider">CoreAudio Engine</text>
+    <g transform="translate(14, 80)">
+      <rect x="0" y="0" width="88" height="22" rx="4" fill="#161d2e"/>
+      <text x="8" y="15" fill="#cbd5e1" class="pill">ARQ Workers</text>
+      <rect x="94" y="0" width="66" height="22" rx="4" fill="#161d2e"/>
+      <text x="102" y="15" fill="#cbd5e1" class="pill">Alembic</text>
+      <rect x="166" y="0" width="88" height="22" rx="4" fill="#161d2e"/>
+      <text x="174" y="15" fill="#cbd5e1" class="pill">WebSockets</text>
+      <rect x="260" y="0" width="68" height="22" rx="4" fill="#161d2e"/>
+      <text x="268" y="15" fill="#cbd5e1" class="pill">Firebase</text>
     </g>
   </g>
 
-  <!-- MODULE 4: BACKEND & DISPATCH -->
-  <g transform="translate(32, 240)">
-    <rect x="0" y="0" width="260" height="156" rx="8" fill="#0d101a" stroke="#1c2030" stroke-width="1"/>
-    <rect x="0" y="0" width="3" height="156" rx="1.5" fill="#10b981"/>
-    
-    <text x="14" y="24" fill="#34d399" class="font-mono" font-size="11" font-weight="700">⚡ BACKEND &amp; DISPATCH</text>
-    <text x="14" y="40" fill="#64748b" class="font-sans" font-size="11">Microservices &amp; state engines</text>
-    
-    <g transform="translate(14, 54)">
-      <!-- FastAPI -->
-      <rect x="0" y="0" width="64" height="22" rx="4" fill="#0d241c"/>
-      <text x="8" y="15" fill="#6ee7b7" class="badge-spider">FastAPI</text>
-      <!-- PostgreSQL -->
-      <rect x="70" y="0" width="84" height="22" rx="4" fill="#161b2b"/>
-      <text x="78" y="15" fill="#cbd5e1" class="badge-spider">PostgreSQL</text>
-      <!-- Redis -->
-      <rect x="160" y="0" width="50" height="22" rx="4" fill="#241117"/>
-      <text x="168" y="15" fill="#fda4af" class="badge-spider">Redis</text>
+  <!-- 4. NATIVE CLIENTS & OS INTEGRATIONS -->
+  <g transform="translate(450, 196)">
+    <rect x="0" y="0" width="394" height="114" rx="8" fill="#0d111c" stroke="#1c2438" stroke-width="1"/>
+    <rect x="0" y="0" width="3" height="114" rx="1.5" fill="#e62429"/>
+
+    <text x="14" y="22" fill="#ff7075" class="font-mono" font-size="11" font-weight="700">🪟 NATIVE CLIENTS &amp; BROWSER AGENTS</text>
+    <text x="14" y="38" fill="#64748b" class="font-sans" font-size="11">Zero-permission desktop engineering &amp; secure extensions</text>
+
+    <g transform="translate(14, 52)">
+      <rect x="0" y="0" width="58" height="22" rx="4" fill="#241117"/>
+      <text x="8" y="15" fill="#fda4af" class="pill">Swift 5</text>
+      <rect x="64" y="0" width="60" height="22" rx="4" fill="#241117"/>
+      <text x="72" y="15" fill="#fda4af" class="pill">AppKit</text>
+      <rect x="130" y="0" width="62" height="22" rx="4" fill="#161d2e"/>
+      <text x="138" y="15" fill="#cbd5e1" class="pill">SwiftUI</text>
+      <rect x="198" y="0" width="132" height="22" rx="4" fill="#241117"/>
+      <text x="206" y="15" fill="#fda4af" class="pill">Chrome MV3 (AEGIS)</text>
     </g>
-    <g transform="translate(14, 82)">
-      <!-- SQLAlchemy -->
-      <rect x="0" y="0" width="90" height="22" rx="4" fill="#161b2b"/>
-      <text x="8" y="15" fill="#cbd5e1" class="badge-spider">SQLAlchemy</text>
-      <!-- ARQ -->
-      <rect x="96" y="0" width="94" height="22" rx="4" fill="#161b2b"/>
-      <text x="104" y="15" fill="#cbd5e1" class="badge-spider">ARQ Workers</text>
-    </g>
-    <g transform="translate(14, 110)">
-      <!-- Alembic -->
-      <rect x="0" y="0" width="66" height="22" rx="4" fill="#161b2b"/>
-      <text x="8" y="15" fill="#cbd5e1" class="badge-spider">Alembic</text>
-      <!-- Firebase -->
-      <rect x="72" y="0" width="68" height="22" rx="4" fill="#161b2b"/>
-      <text x="80" y="15" fill="#cbd5e1" class="badge-spider">Firebase</text>
+    <g transform="translate(14, 80)">
+      <rect x="0" y="0" width="68" height="22" rx="4" fill="#161d2e"/>
+      <text x="8" y="15" fill="#cbd5e1" class="pill">CoreData</text>
+      <rect x="74" y="0" width="62" height="22" rx="4" fill="#161d2e"/>
+      <text x="82" y="15" fill="#cbd5e1" class="pill">Flutter</text>
+      <rect x="142" y="0" width="64" height="22" rx="4" fill="#161d2e"/>
+      <text x="150" y="15" fill="#cbd5e1" class="pill">UIKit iOS</text>
+      <rect x="212" y="0" width="100" height="22" rx="4" fill="#161d2e"/>
+      <text x="220" y="15" fill="#cbd5e1" class="pill">macOS IPC / APIs</text>
     </g>
   </g>
 
-  <!-- MODULE 5: WEB & GAME CRAFT -->
-  <g transform="translate(308, 240)">
-    <rect x="0" y="0" width="260" height="156" rx="8" fill="#0d101a" stroke="#1c2030" stroke-width="1"/>
-    <rect x="0" y="0" width="3" height="156" rx="1.5" fill="#00d2ff"/>
-    
-    <text x="14" y="24" fill="#38bdf8" class="font-mono" font-size="11" font-weight="700">🎨 WEB &amp; 3D PHYSICS</text>
-    <text x="14" y="40" fill="#64748b" class="font-sans" font-size="11">Fluid interfaces &amp; gameplay</text>
-    
-    <g transform="translate(14, 54)">
-      <!-- React 19 -->
-      <rect x="0" y="0" width="70" height="22" rx="4" fill="#161b2b"/>
-      <text x="8" y="15" fill="#cbd5e1" class="badge-spider">React 19</text>
-      <!-- Next.js -->
-      <rect x="76" y="0" width="62" height="22" rx="4" fill="#161b2b"/>
-      <text x="84" y="15" fill="#cbd5e1" class="badge-spider">Next.js</text>
-      <!-- Tailwind -->
-      <rect x="144" y="0" width="80" height="22" rx="4" fill="#161b2b"/>
-      <text x="152" y="15" fill="#cbd5e1" class="badge-spider">Tailwind</text>
+  <!-- 5. FRONTEND, MODERN WEB & 3D GRAPHICS -->
+  <g transform="translate(36, 322)">
+    <rect x="0" y="0" width="394" height="114" rx="8" fill="#0d111c" stroke="#1c2438" stroke-width="1"/>
+    <rect x="0" y="0" width="3" height="114" rx="1.5" fill="#00d2ff"/>
+
+    <text x="14" y="22" fill="#38bdf8" class="font-mono" font-size="11" font-weight="700">🎨 FRONTEND, WEB ENGINES &amp; 3D</text>
+    <text x="14" y="38" fill="#64748b" class="font-sans" font-size="11">Fluid interactive interfaces &amp; real-time simulations</text>
+
+    <g transform="translate(14, 52)">
+      <rect x="0" y="0" width="80" height="22" rx="4" fill="#161d2e"/>
+      <text x="8" y="15" fill="#cbd5e1" class="pill">TypeScript</text>
+      <rect x="86" y="0" width="70" height="22" rx="4" fill="#161d2e"/>
+      <text x="94" y="15" fill="#cbd5e1" class="pill">React 19</text>
+      <rect x="162" y="0" width="62" height="22" rx="4" fill="#161d2e"/>
+      <text x="170" y="15" fill="#cbd5e1" class="pill">Next.js</text>
+      <rect x="230" y="0" width="86" height="22" rx="4" fill="#161d2e"/>
+      <text x="238" y="15" fill="#cbd5e1" class="pill">Tailwind CSS</text>
     </g>
-    <g transform="translate(14, 82)">
-      <!-- Unity -->
+    <g transform="translate(14, 80)">
       <rect x="0" y="0" width="56" height="22" rx="4" fill="#241117"/>
-      <text x="8" y="15" fill="#fda4af" class="badge-spider">Unity</text>
-      <!-- 3D Physics -->
-      <rect x="62" y="0" width="86" height="22" rx="4" fill="#161b2b"/>
-      <text x="70" y="15" fill="#cbd5e1" class="badge-spider">Game Physics</text>
-      <!-- Vite -->
-      <rect x="154" y="0" width="46" height="22" rx="4" fill="#161b2b"/>
-      <text x="162" y="15" fill="#cbd5e1" class="badge-spider">Vite</text>
-    </g>
-    <g transform="translate(14, 110)">
-      <!-- HTML/CSS -->
-      <rect x="0" y="0" width="76" height="22" rx="4" fill="#161b2b"/>
-      <text x="8" y="15" fill="#cbd5e1" class="badge-spider">HTML5/CSS3</text>
-      <!-- Tkinter -->
-      <rect x="82" y="0" width="62" height="22" rx="4" fill="#161b2b"/>
-      <text x="90" y="15" fill="#cbd5e1" class="badge-spider">Tkinter</text>
+      <text x="8" y="15" fill="#fda4af" class="pill">Unity</text>
+      <rect x="62" y="0" width="44" height="22" rx="4" fill="#161d2e"/>
+      <text x="70" y="15" fill="#cbd5e1" class="pill">C#</text>
+      <rect x="112" y="0" width="86" height="22" rx="4" fill="#161d2e"/>
+      <text x="120" y="15" fill="#cbd5e1" class="pill">Game Physics</text>
+      <rect x="204" y="0" width="46" height="22" rx="4" fill="#161d2e"/>
+      <text x="212" y="15" fill="#cbd5e1" class="pill">Vite</text>
     </g>
   </g>
 
-  <!-- MODULE 6: DEVOPS & HARDWARE RIGS -->
-  <g transform="translate(584, 240)">
-    <rect x="0" y="0" width="264" height="156" rx="8" fill="#0d101a" stroke="#1c2030" stroke-width="1"/>
-    <rect x="0" y="0" width="3" height="156" rx="1.5" fill="#e62429"/>
-    
-    <text x="14" y="24" fill="#ff7075" class="font-mono" font-size="11" font-weight="700">🛠️ DEVOPS &amp; HARDWARE RIGS</text>
-    <text x="14" y="40" fill="#64748b" class="font-sans" font-size="11">Silicon tuning &amp; CI automation</text>
-    
-    <g transform="translate(14, 54)">
-      <!-- Docker -->
-      <rect x="0" y="0" width="60" height="22" rx="4" fill="#161b2b"/>
-      <text x="8" y="15" fill="#cbd5e1" class="badge-spider">Docker</text>
-      <!-- Docker Compose -->
-      <rect x="66" y="0" width="112" height="22" rx="4" fill="#161b2b"/>
-      <text x="74" y="15" fill="#cbd5e1" class="badge-spider">Docker Compose</text>
+  <!-- 6. DEVOPS, HARNESSES & HARDWARE ARCHITECTURE -->
+  <g transform="translate(450, 322)">
+    <rect x="0" y="0" width="394" height="114" rx="8" fill="#0d111c" stroke="#1c2438" stroke-width="1"/>
+    <rect x="0" y="0" width="3" height="114" rx="1.5" fill="#10b981"/>
+
+    <text x="14" y="22" fill="#34d399" class="font-mono" font-size="11" font-weight="700">🛠️ DEVOPS, TEST HARNESSES &amp; HARDWARE</text>
+    <text x="14" y="38" fill="#64748b" class="font-sans" font-size="11">Automated CI/CD, sandboxing, and bare-metal PC builds</text>
+
+    <g transform="translate(14, 52)">
+      <rect x="0" y="0" width="60" height="22" rx="4" fill="#161d2e"/>
+      <text x="8" y="15" fill="#cbd5e1" class="pill">Docker</text>
+      <rect x="66" y="0" width="112" height="22" rx="4" fill="#161d2e"/>
+      <text x="74" y="15" fill="#cbd5e1" class="pill">Docker Compose</text>
+      <rect x="184" y="0" width="110" height="22" rx="4" fill="#161d2e"/>
+      <text x="192" y="15" fill="#cbd5e1" class="pill">GitHub Actions CI</text>
     </g>
-    <g transform="translate(14, 82)">
-      <!-- Pytest -->
-      <rect x="0" y="0" width="58" height="22" rx="4" fill="#161b2b"/>
-      <text x="8" y="15" fill="#cbd5e1" class="badge-spider">Pytest</text>
-      <!-- Playwright -->
-      <rect x="64" y="0" width="82" height="22" rx="4" fill="#161b2b"/>
-      <text x="72" y="15" fill="#cbd5e1" class="badge-spider">Playwright</text>
-      <!-- Git -->
-      <rect x="152" y="0" width="40" height="22" rx="4" fill="#161b2b"/>
-      <text x="160" y="15" fill="#cbd5e1" class="badge-spider">Git</text>
-    </g>
-    <g transform="translate(14, 110)">
-      <!-- Custom PC Builds -->
-      <rect x="0" y="0" width="138" height="22" rx="4" fill="#241117"/>
-      <text x="8" y="15" fill="#fda4af" class="badge-spider">Custom PC Rig Building</text>
-      <!-- Linux -->
-      <rect x="144" y="0" width="52" height="22" rx="4" fill="#161b2b"/>
-      <text x="152" y="15" fill="#cbd5e1" class="badge-spider">Linux</text>
+    <g transform="translate(14, 80)">
+      <rect x="0" y="0" width="58" height="22" rx="4" fill="#161d2e"/>
+      <text x="8" y="15" fill="#cbd5e1" class="pill">Pytest</text>
+      <rect x="64" y="0" width="82" height="22" rx="4" fill="#161d2e"/>
+      <text x="72" y="15" fill="#cbd5e1" class="pill">Playwright</text>
+      <rect x="152" y="0" width="150" height="22" rx="4" fill="#241117"/>
+      <text x="160" y="15" fill="#fda4af" class="pill">Custom PC Rig Engineering</text>
     </g>
   </g>
 

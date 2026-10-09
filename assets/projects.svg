@@ -1,0 +1,270 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 580" width="100%" height="580" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="proj-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b16"/>
+      <stop offset="50%" stop-color="#0a1226"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <!-- Border Glow -->
+    <linearGradient id="proj-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#247bff" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#ff354f" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#247bff" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Card Background -->
+    <linearGradient id="proj-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1733"/>
+      <stop offset="100%" stop-color="#080e22"/>
+    </linearGradient>
+
+    <!-- Dot Pattern -->
+    <pattern id="proj-dots" x="0" y="0" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.9" fill="#247bff" fill-opacity="0.12"/>
+    </pattern>
+
+    <filter id="p-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    .font-mono {
+      font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', Menlo, monospace;
+    }
+    .title {
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .live-pulse {
+      animation: pulse 2s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="10" y="10" width="860" height="560" rx="16" fill="url(#proj-bg)"/>
+  <rect x="10" y="10" width="860" height="560" rx="16" fill="url(#proj-dots)"/>
+  <rect x="10" y="10" width="860" height="560" rx="16" stroke="url(#proj-border)" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <g transform="translate(36, 32)">
+    <rect x="0" y="0" width="135" height="20" rx="4" fill="#0d1b38" stroke="#247bff" stroke-width="1"/>
+    <text x="8" y="14" fill="#247bff" class="font-mono" font-size="10.5" font-weight="700">CORE ARCHITECTURES</text>
+    <text x="148" y="15" fill="#f8fafc" class="font-sans title" font-size="18">Featured Production Systems &amp; R&amp;D</text>
+    <line x1="0" y1="28" x2="808" y2="28" stroke="#17223b" stroke-width="1"/>
+  </g>
+
+  <!-- ==================== 6-PROJECT GRID (2 COLUMNS x 3 ROWS) ==================== -->
+
+  <!-- CARD 1: AEGIS (SIH '26 / ISRO) -->
+  <g transform="translate(36, 78)">
+    <rect x="0" y="0" width="394" height="142" rx="10" fill="url(#proj-card-bg)" stroke="#247bff" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="142" rx="2" fill="#247bff"/>
+
+    <!-- Category Pill -->
+    <rect x="16" y="14" width="145" height="18" rx="3" fill="#0b1b3b" stroke="#247bff" stroke-width="0.8"/>
+    <text x="22" y="27" fill="#93c5fd" class="font-mono" font-size="9" font-weight="700">SIH '26 · ISRO THEME</text>
+
+    <!-- Live indicator -->
+    <circle cx="372" cy="22" r="3" fill="#10b981" class="live-pulse"/>
+
+    <!-- Project Title -->
+    <text x="16" y="52" fill="#f8fafc" class="font-sans" font-size="16" font-weight="800">🛡️ AEGIS — Privacy AI Agent</text>
+    
+    <!-- Description with balanced line wrap -->
+    <text x="16" y="73" fill="#94a3b8" class="font-sans" font-size="11.5">
+      "The screen leaves last": in-browser local ML sanitization
+    </text>
+    <text x="16" y="90" fill="#94a3b8" class="font-sans" font-size="11.5">
+      &amp; redaction before multimodal AI inspects display data.
+    </text>
+
+    <!-- Tags Row -->
+    <g transform="translate(16, 108)">
+      <rect x="0" y="0" width="84" height="20" rx="4" fill="#101c38" stroke="#1d2d52" stroke-width="0.8"/>
+      <text x="8" y="14" fill="#cbd5e1" class="font-mono" font-size="10">Chrome MV3</text>
+
+      <rect x="90" y="0" width="70" height="20" rx="4" fill="#101c38" stroke="#1d2d52" stroke-width="0.8"/>
+      <text x="98" y="14" fill="#cbd5e1" class="font-mono" font-size="10">Local ML</text>
+
+      <rect x="166" y="0" width="80" height="20" rx="4" fill="#1e1028" stroke="#ff354f" stroke-width="0.8"/>
+      <text x="174" y="14" fill="#fda4af" class="font-mono" font-size="10">AI Safety</text>
+    </g>
+  </g>
+
+  <!-- CARD 2: FraudLens -->
+  <g transform="translate(450, 78)">
+    <rect x="0" y="0" width="394" height="142" rx="10" fill="url(#proj-card-bg)" stroke="#1d2d52" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="142" rx="2" fill="#ff354f"/>
+
+    <!-- Category Pill -->
+    <rect x="16" y="14" width="138" height="18" rx="3" fill="#26101c" stroke="#ff354f" stroke-width="0.8"/>
+    <text x="22" y="27" fill="#fda4af" class="font-mono" font-size="9" font-weight="700">CYBER THREAT INTEL</text>
+
+    <!-- Project Title -->
+    <text x="16" y="52" fill="#f8fafc" class="font-sans" font-size="16" font-weight="800">🔍 FraudLens — Phishing X-Ray</text>
+    
+    <!-- Description with balanced line wrap -->
+    <text x="16" y="73" fill="#94a3b8" class="font-sans" font-size="11.5">
+      Detects recruitment process compression (FFCS) across
+    </text>
+    <text x="16" y="90" fill="#94a3b8" class="font-sans" font-size="11.5">
+      8 stages to catch GenAI spear-phishing on day-zero.
+    </text>
+
+    <!-- Tags Row -->
+    <g transform="translate(16, 108)">
+      <rect x="0" y="0" width="62" height="20" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8"/>
+      <text x="8" y="14" fill="#6ee7b7" class="font-mono" font-size="10">FastAPI</text>
+
+      <rect x="68" y="0" width="80" height="20" rx="4" fill="#101c38" stroke="#1d2d52" stroke-width="0.8"/>
+      <text x="76" y="14" fill="#cbd5e1" class="font-mono" font-size="10">TypeScript</text>
+
+      <rect x="154" y="0" width="68" height="20" rx="4" fill="#101c38" stroke="#1d2d52" stroke-width="0.8"/>
+      <text x="162" y="14" fill="#cbd5e1" class="font-mono" font-size="10">Gemini</text>
+    </g>
+  </g>
+
+  <!-- CARD 3: SIDEDOCK -->
+  <g transform="translate(36, 236)">
+    <rect x="0" y="0" width="394" height="142" rx="10" fill="url(#proj-card-bg)" stroke="#1d2d52" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="142" rx="2" fill="#38bdf8"/>
+
+    <!-- Category Pill -->
+    <rect x="16" y="14" width="132" height="18" rx="3" fill="#0c2238" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="22" y="27" fill="#bae6fd" class="font-mono" font-size="9" font-weight="700">MACOS DESKTOP TOOL</text>
+
+    <!-- Project Title -->
+    <text x="16" y="52" fill="#f8fafc" class="font-sans" font-size="16" font-weight="800">🪟 SIDEDOCK — macOS Secondary Dock</text>
+    
+    <!-- Description with balanced line wrap -->
+    <text x="16" y="73" fill="#94a3b8" class="font-sans" font-size="11.5">
+      Zero-permission native macOS dock for ultrawide displays
+    </text>
+    <text x="16" y="90" fill="#94a3b8" class="font-sans" font-size="11.5">
+      with cosine-falloff magnification and zero battery drain.
+    </text>
+
+    <!-- Tags Row -->
+    <g transform="translate(16, 108)">
+      <rect x="0" y="0" width="58" height="20" rx="4" fill="#2d131f" stroke="#ff354f" stroke-width="0.8"/>
+      <text x="8" y="14" fill="#fda4af" class="font-mono" font-size="10">Swift 5</text>
+
+      <rect x="64" y="0" width="60" height="20" rx="4" fill="#101c38" stroke="#1d2d52" stroke-width="0.8"/>
+      <text x="72" y="14" fill="#cbd5e1" class="font-mono" font-size="10">AppKit</text>
+
+      <rect x="130" y="0" width="94" height="20" rx="4" fill="#101c38" stroke="#1d2d52" stroke-width="0.8"/>
+      <text x="138" y="14" fill="#cbd5e1" class="font-mono" font-size="10">High Refresh</text>
+    </g>
+  </g>
+
+  <!-- CARD 4: OpenEnv Enterprise -->
+  <g transform="translate(450, 236)">
+    <rect x="0" y="0" width="394" height="142" rx="10" fill="url(#proj-card-bg)" stroke="#1d2d52" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="142" rx="2" fill="#a78bfa"/>
+
+    <!-- Category Pill -->
+    <rect x="16" y="14" width="138" height="18" rx="3" fill="#1e1236" stroke="#8b5cf6" stroke-width="0.8"/>
+    <text x="22" y="27" fill="#ddd6fe" class="font-mono" font-size="9" font-weight="700">REINFORCEMENT LEARNING</text>
+
+    <!-- Project Title -->
+    <text x="16" y="52" fill="#f8fafc" class="font-sans" font-size="16" font-weight="800">🧠 OpenEnv — Gym-Compatible RL</text>
+    
+    <!-- Description with balanced line wrap -->
+    <text x="16" y="73" fill="#94a3b8" class="font-sans" font-size="11.5">
+      Custom RL environment simulation bed. Trained
+    </text>
+    <text x="16" y="90" fill="#94a3b8" class="font-sans" font-size="11.5">
+      Llama-3.2-3B via GRPO for schema drift resilience.
+    </text>
+
+    <!-- Tags Row -->
+    <g transform="translate(16, 108)">
+      <rect x="0" y="0" width="58" height="20" rx="4" fill="#101c38" stroke="#1d2d52" stroke-width="0.8"/>
+      <text x="8" y="14" fill="#cbd5e1" class="font-mono" font-size="10">Python</text>
+
+      <rect x="64" y="0" width="82" height="20" rx="4" fill="#2d131f" stroke="#ff354f" stroke-width="0.8"/>
+      <text x="72" y="14" fill="#fda4af" class="font-mono" font-size="10">Llama-3.2</text>
+
+      <rect x="152" y="0" width="94" height="20" rx="4" fill="#1e1236" stroke="#8b5cf6" stroke-width="0.8"/>
+      <text x="160" y="14" fill="#ddd6fe" class="font-mono" font-size="10">GRPO Policy</text>
+    </g>
+  </g>
+
+  <!-- CARD 5: CMS-AI -->
+  <g transform="translate(36, 394)">
+    <rect x="0" y="0" width="394" height="142" rx="10" fill="url(#proj-card-bg)" stroke="#1d2d52" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="142" rx="2" fill="#10b981"/>
+
+    <!-- Category Pill -->
+    <rect x="16" y="14" width="136" height="18" rx="3" fill="#0b241e" stroke="#10b981" stroke-width="0.8"/>
+    <text x="22" y="27" fill="#6ee7b7" class="font-mono" font-size="9" font-weight="700">ENTERPRISE COMPLIANCE</text>
+
+    <!-- Project Title -->
+    <text x="16" y="52" fill="#f8fafc" class="font-sans" font-size="16" font-weight="800">🛡️ CMS-AI — DPDP Consent Platform</text>
+    
+    <!-- Description with balanced line wrap -->
+    <text x="16" y="73" fill="#94a3b8" class="font-sans" font-size="11.5">
+      Production privacy manager with asynchronous ARQ queues,
+    </text>
+    <text x="16" y="90" fill="#94a3b8" class="font-sans" font-size="11.5">
+      multi-factor OTP verification &amp; statutory audit trails.
+    </text>
+
+    <!-- Tags Row -->
+    <g transform="translate(16, 108)">
+      <rect x="0" y="0" width="62" height="20" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8"/>
+      <text x="8" y="14" fill="#6ee7b7" class="font-mono" font-size="10">FastAPI</text>
+
+      <rect x="68" y="0" width="82" height="20" rx="4" fill="#101c38" stroke="#1d2d52" stroke-width="0.8"/>
+      <text x="76" y="14" fill="#cbd5e1" class="font-mono" font-size="10">PostgreSQL</text>
+
+      <rect x="156" y="0" width="52" height="20" rx="4" fill="#101c38" stroke="#1d2d52" stroke-width="0.8"/>
+      <text x="164" y="14" fill="#cbd5e1" class="font-mono" font-size="10">Redis</text>
+    </g>
+  </g>
+
+  <!-- CARD 6: TrustLayer / Shooting Strike -->
+  <g transform="translate(450, 394)">
+    <rect x="0" y="0" width="394" height="142" rx="10" fill="url(#proj-card-bg)" stroke="#1d2d52" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="142" rx="2" fill="#247bff"/>
+
+    <!-- Category Pill -->
+    <rect x="16" y="14" width="138" height="18" rx="3" fill="#0d1b38" stroke="#247bff" stroke-width="0.8"/>
+    <text x="22" y="27" fill="#93c5fd" class="font-mono" font-size="9" font-weight="700">RAG &amp; CITATION ENGINE</text>
+
+    <!-- Project Title -->
+    <text x="16" y="52" fill="#f8fafc" class="font-sans" font-size="16" font-weight="800">🌌 TrustLayer — Citation Copilot</text>
+    
+    <!-- Description with balanced line wrap -->
+    <text x="16" y="73" fill="#94a3b8" class="font-sans" font-size="11.5">
+      Enterprise knowledge copilot with exact citation tracing,
+    </text>
+    <text x="16" y="90" fill="#94a3b8" class="font-sans" font-size="11.5">
+      dynamic hallucination guards &amp; FAISS vector lookups.
+    </text>
+
+    <!-- Tags Row -->
+    <g transform="translate(16, 108)">
+      <rect x="0" y="0" width="48" height="20" rx="4" fill="#101c38" stroke="#1d2d52" stroke-width="0.8"/>
+      <text x="8" y="14" fill="#cbd5e1" class="font-mono" font-size="10">RAG</text>
+
+      <rect x="54" y="0" width="52" height="20" rx="4" fill="#101c38" stroke="#1d2d52" stroke-width="0.8"/>
+      <text x="62" y="14" fill="#cbd5e1" class="font-mono" font-size="10">FAISS</text>
+
+      <rect x="112" y="0" width="80" height="20" rx="4" fill="#1e1028" stroke="#ff354f" stroke-width="0.8"/>
+      <text x="120" y="14" fill="#fda4af" class="font-mono" font-size="10">AI Safety</text>
+    </g>
+  </g>
+
+</svg>
